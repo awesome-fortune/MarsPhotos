@@ -21,6 +21,7 @@ class OverviewFragment : Fragment() {
         binding.apply {
             lifecycleOwner = this@OverviewFragment
             viewModel = vm
+            photosGrid.adapter = PhotoGridAdapter()
         }
 
         return binding.root
